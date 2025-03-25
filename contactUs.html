@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="Images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="Images/favicon-32x32.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="Styles/styles.css">
+
+  <title>Migas ~ Renewable Energy</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+  <div class="loader"></div>
+  <div id="overlay" class="overlay"></div>
+  <ul id="mQueryUl" class="mQueryUl">
+    <li><a href="index.html">Home</a> </li>
+    <li><a href="services.html">Services</a> </li>
+    <li><a href="testimonials.html">Testimonials</a> </li>
+    <li><a href="aboutUs.html">About&nbsp;Us</a> </li>
+    <li><a href="contactUs.html"  class="active">Contact&nbsp;Us</a> </li>
+  </ul>
+  <header>
+    <a href=""><img src="Images/migas_logo.png" alt="Migas Logo"></a>
+    <ul>
+      <li><a href="index.html">Home</a> </li>
+      <li><a href="services.html">Services</a> </li>
+      <li><a href="testimonials.html">Testimonials</a> </li>
+      <li><a href="aboutUs.html">About&nbsp;Us</a> </li>
+      <li><a href="contactUs.html"  class="active">Contact&nbsp;Us</a> </li>
+    </ul>
+    </ul>
+    <div class="contener">
+      <a href="catalog.html" class="catalog">Catalog <i class="fa-solid fa-arrow-right"></i></a>
+      <i id="fa-chart-bar" class="fa-regular fa-chart-bar"></i>
+    </div>
+  </header>
+  
+  <div class="generalHeading">
+    <h1>Get in touch with us.</h1>
+  </div>
+
+  <div class="containerGIU">
+    <form onsubmit="sendEmail(); reset(); return false;" class="helpcenter">
+      <h2>HOW&nbsp;CAN&nbsp;I&nbsp;HELP?</h2>
+
+      <div class="formfill">
+        <div class="mainfill">
+          <div class="inputbox">
+            <input type="text" id="firstname" required>
+            <span>First Name</span>
+          </div>
+
+          <div class="inputbox">
+            <input type="text" id="email" required>
+            <span>Email</span>
+          </div>
+        </div>
+
+        <div class="mainfill">
+          <div class="inputbox">
+            <input type="text" id="lastname" required>
+            <span>Last Name</span>
+          </div>
+
+          <div class="inputbox">
+            <input type="text" id="phonenumber" required>
+            <span>Phone</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="textAreaMain">
+        <textarea id="message" required></textarea>
+        <span>Type your message</span>
+      </div>
+
+      <div class="send-btn">
+        <input type="submit" value="Send">
+      </div>
+    </form>
+
+    <div class="contactInfo">
+      <div class="infobox">
+        <div class="box">
+          <i class="fa fa-map-marker" aria-hidden="true"></i>
+        </div>
+        <div class="info">
+          <h3>Address</h3>
+          <p>Kilifi, KENYA</p>
+        </div>
+      </div>
+
+      <div class="infobox">
+        <div class="box">
+          <i class="fa fa-envelope" aria-hidden="true"></i>
+        </div>
+        <div class="info">
+          <h3>Email</h3>
+          <p>mygascompani@gmail.com</p>
+        </div>
+      </div>
+
+      <div class="infobox">
+        <div class="box">
+          <i class="fa fa-phone" aria-hidden="true"></i>
+        </div>
+        <div class="info">
+          <h3>Phone</h3>
+          <p>+254756713646</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <h1>Let's help you keep the fire burning with less costs!</h1>
+    <div class="footerContainer">
+      <div class="partition">
+        <h1>Short-Links</h1>
+        <ul>
+          <li><a href="index.html">Home</a> </li>
+          <li><a href="services.html">Services</a> </li>
+          <li><a href="testimonials.html">Testimonials</a> </li>
+          <li><a href="aboutUs.html">About&nbsp;Us</a> </li>
+          <li><a href="contactUs.html"  class="active">Contact&nbsp;Us</a> </li>
+        </ul>
+        </ul>
+      </div>
+      <div class="partition">
+        <h1>Contact&nbsp;Us:</h1>
+        <p>Phone: +254756713646</p>
+        <p>Email: mygascompani@gmail.com</p>
+
+        <div class="address">
+          <h1>Address:</h1>
+          <p>Kibaoni, KILIFI</p>
+        </div>
+      </div>
+      <div class="partition">
+        <h1>Tech:</h1>
+        <div class="handles">
+          <a class="Instagram" href="https://www.instagram.com/_be.trades" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+          <a class="YouTube" href="https://youtube.com/@biogas1?si=8R0CRVybggG-4ToF" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+          <a class="Email" href="mailto:betrades23@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+          <a class="Telegram" href="https://t.me/+254756713646" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+          <a class="WhatsAapp" href="https://wa.me/254756713646" target="_blank"><i class="fa-brands fa-whatsapp fa-2x"></i></a>
+        </div>
+      </div>
+    </div>
+    <!--<p><span>IMPORTANT:</span> Embrace an eco-friendly future with biogas energy, a sustainable solution that reduces carbon emissions and waste. Our biogas bioreactor installation services promote environmental conservation by converting organic waste into clean, renewable energy. By utilizing locally sourced materials, we ensure affordability while contributing to a greener planet. Experience a cost-effective and responsible way to power your home or business without harming the environment.</p>-->
+    <p>NOTE: Consultaion is free of charge.</p>
+    <p class="ultimateBottom">COPYRIGHT &copy; 2024/<span>2025</span> <span>MIGAS </span><br>ALL RIGHTS RESERVED.<br>Site built with <i class="fa-solid fa-heart"></i> by <a href="https://www.instagram.com/blessedemmanuel254">BTC</a>.</p>
+
+
+  </footer>
+
+  <script src="Styles/scripts.js"></script>
+  <script>
+    const overlay = document.getElementById('overlay');
+    let sidebar = document.getElementById('mQueryUl');
+
+    function displaySidebar() {
+      const currentDisplay = getComputedStyle(sidebar).display; // Get actual computed display
+
+      if (currentDisplay === 'none') {
+        sidebar.style.display = 'flex';
+        overlay.style.display = 'block';
+      } else {
+        sidebar.style.display = 'none';
+        overlay.style.display = 'none';
+      }
+    }
+
+    document.getElementById("fa-chart-bar").addEventListener("click", displaySidebar);
+    overlay.addEventListener("click", displaySidebar);
+
+
+    document.addEventListener("DOMContentLoaded", function () {
+      const textLines = ["Welcome to,", "MIGAS RENEWABLE ENERGY LTD."];
+      const targetElement = document.querySelector(".container h1");
+      let lineIndex = 0;
+      let charIndex = 0;
+      let currentText = "";
+      
+      function typeEffect() {
+        if (lineIndex < textLines.length) {
+          if (charIndex < textLines[lineIndex].length) {
+            currentText += textLines[lineIndex][charIndex]; 
+            targetElement.innerHTML = currentText + "|"; 
+            charIndex++;
+            setTimeout(typeEffect, 100);
+          } else {
+            targetElement.innerHTML = currentText; 
+            lineIndex++;
+            charIndex = 0;
+            if (lineIndex < textLines.length) {
+              currentText += "<br>"; 
+              setTimeout(typeEffect, 100);
+            } else {
+              setTimeout(eraseEffect, 2000);
+            }
+          }
+        }
+      }
+  
+      function eraseEffect() {
+        if (currentText.length > 0) {
+          currentText = currentText.slice(0, -1);
+          targetElement.innerHTML = currentText + "|"; 
+          setTimeout(eraseEffect, 50); 
+        } else {
+          lineIndex = 0; 
+          charIndex = 0;
+          setTimeout(typeEffect, 500);
+        }
+      }
+  
+      targetElement.innerHTML = ""; 
+      typeEffect();
+    });
+  </script>      
+
+</body>
+</html>

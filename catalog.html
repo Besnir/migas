@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="Images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="Images/favicon-32x32.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="Styles/styles.css">
+
+  <title>Migas ~ Renewable Energy</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+  <div class="loader"></div>
+  <div class="generalHeading catalog">
+    <p>Welcome to our catalog.</p>
+    <div class="home">
+      <i class="fa-solid fa-house"></i>
+      <a href="index.html">Return&nbsp;Home <i class="fa-solid fa-rotate-left"></i></a>
+    </div>
+  </div>
+        
+  <div class="p-img">
+    <div class="desc">
+      <h2>Hi there,</h2>
+      <h3>We are committed to providing sustainable and efficient energy solutions through high-quality biogas systems. Our mission is to support individuals, businesses, and communities in harnessing renewable energy for a cleaner and greener future.
+      </h3>
+      <p>
+        At MIGAS Company, we aim at providing sustainable biogas solutions that promote clean energy and environmental conservation.
+      </p>
+    </div>
+    
+    <div class="slideshow-container">
+      <div class="slides">
+        <div class="mySlides">
+          <img src="Images/bio_gas.jpeg">
+      </div>
+      <div class="mySlides">
+          <img src="Images/biogas (1).jpeg">
+      </div>
+      <div class="mySlides">
+          <img src="Images/biogas (1).jpg">
+      </div>
+      <div class="mySlides">
+          <img src="Images/bioGas (2).jpeg">
+      </div>
+        <div class="mySlides">
+            <img src="Images/biogas.jpg">
+        </div>
+        <div class="mySlides">
+            <img src="Images/bolts.jpeg">
+        </div>
+        <div class="mySlides">
+            <img src="Images/bolts_box.jpeg">
+        </div>
+      </div>
+
+      <!-- Navigation buttons -->
+      <a class="prev" onclick="plusSlides(-1)">◀</a>
+      <a class="next" onclick="plusSlides(1)">▶</a>
+    
+    </div>
+  </div>
+
+  <footer>
+    <h1>Let's help you keep the fire burning with less costs!</h1>
+    <div class="footerContainer">
+      <div class="partition">
+        <h1>Catalog</h1>
+        <p>Explore our comprehensive range of biogas solutions designed for households, businesses, and industries. </p>
+      </div>
+      <div class="partition">
+        <h1>Contact&nbsp;Us:</h1>
+        <p>Phone: +254756713646</p>
+        <p>Email: mygascompani@gmail.com</p>
+
+        <div class="address">
+          <h1>Address:</h1>
+          <p>Kibaoni, KILIFI</p>
+        </div>
+      </div>
+      <div class="partition">
+        <h1>Tech:</h1>
+        <div class="handles">
+          <a class="Instagram" href="https://www.instagram.com/_be.trades" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+          <a class="YouTube" href="https://youtube.com/@biogas1?si=8R0CRVybggG-4ToF" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+          <a class="Email" href="mailto:betrades23@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+          <a class="Telegram" href="https://t.me/+254756713646" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+          <a class="WhatsAapp" href="https://wa.me/254756713646" target="_blank"><i class="fa-brands fa-whatsapp fa-2x"></i></a>
+        </div>
+      </div>
+    </div>
+    <p class="ultimateBottom">COPYRIGHT &copy; 2024/<span>2025</span> <span>MIGAS </span><br>ALL RIGHTS RESERVED.<br>Site built with <i class="fa-solid fa-heart"></i> by <a href="https://www.instagram.com/blessedemmanuel254">BTC</a>.</p>
+
+  </footer>
+
+  <script src="Styles/scripts.js"></script>
+  <script>
+    const overlay = document.getElementById('overlay');
+    let sidebar = document.getElementById('mQueryUl');
+
+    function displaySidebar() {
+      const currentDisplay = getComputedStyle(sidebar).display; // Get actual computed display
+
+      if (currentDisplay === 'none') {
+        sidebar.style.display = 'flex';
+        overlay.style.display = 'block';
+      } else {
+        sidebar.style.display = 'none';
+        overlay.style.display = 'none';
+      }
+    }
+
+    document.getElementById("fa-chart-bar").addEventListener("click", displaySidebar);
+    overlay.addEventListener("click", displaySidebar);
+
+
+    document.addEventListener("DOMContentLoaded", function () {
+      const textLines = ["Welcome to,", "MIGAS RENEWABLE ENERGY LTD."];
+      const targetElement = document.querySelector(".container h1");
+      let lineIndex = 0;
+      let charIndex = 0;
+      let currentText = "";
+      
+      function typeEffect() {
+        if (lineIndex < textLines.length) {
+          if (charIndex < textLines[lineIndex].length) {
+            currentText += textLines[lineIndex][charIndex]; 
+            targetElement.innerHTML = currentText + "|"; 
+            charIndex++;
+            setTimeout(typeEffect, 100);
+          } else {
+            targetElement.innerHTML = currentText; 
+            lineIndex++;
+            charIndex = 0;
+            if (lineIndex < textLines.length) {
+              currentText += "<br>"; 
+              setTimeout(typeEffect, 100);
+            } else {
+              setTimeout(eraseEffect, 2000);
+            }
+          }
+        }
+      }
+  
+      function eraseEffect() {
+        if (currentText.length > 0) {
+          currentText = currentText.slice(0, -1);
+          targetElement.innerHTML = currentText + "|"; 
+          setTimeout(eraseEffect, 50); 
+        } else {
+          lineIndex = 0; 
+          charIndex = 0;
+          setTimeout(typeEffect, 500);
+        }
+      }
+  
+      targetElement.innerHTML = ""; 
+      typeEffect();
+    });
+  </script>      
+
+</body>
+</html>
