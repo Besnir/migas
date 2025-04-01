@@ -946,7 +946,7 @@
                   <div>
                     <h4 class="mb-3">E-Mail</h4>
                     <p>
-                      <a class="link-secondary text-decoration-none" href="mailto:mygascompani@gmail.com">mygascompani@gmail.com</a>
+                      <a class="link-secondary text-decoration-none" href="mailto:migasrenewableenergy@gmail.com">migasrenewableenergy@gmail.com</a>
                     </p>
                   </div>
                 </div>
@@ -981,7 +981,7 @@
                 <a class="link-secondary text-decoration-none" href="tel:+254756713646">(254) 756-713-646</a>
               </p>
               <p class="mb-0">
-                <a class="link-secondary text-decoration-none" href="mailto:mygascompani@gmail.com">mygascompani@gmail.com</a>
+                <a class="link-secondary text-decoration-none" href="mailto:migasrenewableenergy@gmail.com">migasrenewableenergy@gmail.com</a>
               </p>
             </div>
           </div>
