@@ -1,11 +1,9 @@
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: Poppins, Arial;
 }
-
 
 /*----Loader----*/
 .loader {
@@ -183,18 +181,25 @@ body header .contener i:hover {
 body .container {
   margin-top: calc((clamp(10px, 2vw, 2vw)*2) + 45px);
   padding: 0 clamp(10px, 2vw, 2vw);
+  padding-bottom: clamp(30px, 2.1vw, 2.1vw);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url('Images/bioGas (2).jpeg');
+  background-image: url('Images/biogas.jpeg');
+  position: absolute;
+  z-index: 998;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
   gap: clamp(10px, 2vw, 2vw);
-  background: linear-gradient( to bottom, rgba(0, 0, 0, 0) 0%,rgba(0, 0, 0, 0.5) 50%, #008000e7 90%), url('/Images/bioGas (2).jpeg') no-repeat center/cover;
+  background: linear-gradient( to bottom, rgba(0, 0, 0, 0) 0%,rgba(0, 0, 0, 0.5) 50%, #008000e7 90%), url('/Images/biogas.jpeg') no-repeat center/cover;
   color: white;
   font-size: 20px;
 }
@@ -202,6 +207,7 @@ body .container {
 body .container h1 {
   font-weight: 550;
   text-align: center;
+  margin-bottom: clamp(20px, 1vh, 1vh);
 }
 
 body .container h1 span {
@@ -342,6 +348,17 @@ body footer p a {
   color: white;
   font-size: 16px;
   font-weight: bold;
+  background: url('/Images/biogas12.png') no-repeat center center/cover;
+}
+
+.generalHeading::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .generalHeading.catalog {
@@ -352,6 +369,7 @@ body footer p a {
 
 .generalHeading h1 {
   text-align: center;
+  z-index: 1;
 }
 
 .generalHeading.catalog p {
@@ -1135,4 +1153,70 @@ body footer p a {
   .p-img .desc h2 {
     font-size: 20px;
   }
+}
+
+/* Slider */
+.slider{
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  margin-top: calc((clamp(10px, 2vw, 2vw)*2) + 45px);
+}
+.slider .list{
+  position: absolute;
+  width: max-content;
+  height: 100%;
+  left: 0;
+  top: 0;
+  display: flex;
+  transition: 1s;
+}
+.slider .list img{
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+.slider .buttons{
+  position: absolute;
+  top: 45%;
+  left: 5%;
+  width: 90%;
+  display: flex;
+  z-index: 999;
+  justify-content: space-between;
+}
+.slider .buttons button{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #fff5;
+  color: #fff;
+  border: none;
+  font-family: monospace;
+  font-weight: bold;
+}
+.slider .dots{
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  color: #fff;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  z-index: 999;
+  justify-content: center;
+}
+.slider .dots li{
+  list-style: none;
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  margin: 10px;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+.slider .dots li.active{
+  width: 30px;
 }
